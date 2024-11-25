@@ -18,11 +18,14 @@
     </head>
 
     <body bgcolor="#E8E8E8">
+
+        <!-- Navbar -->
         <nav class="py-9 px-4" x-data="{navOpen : true}">
             <div class="container mx-auto">
                 <div class="flex items-center justify-between">
                     <img src="../public/assets/logo.svg" alt="" class="order-1 sm:order-2">
-                    <img @click="navOpen = !navOpen" src="../public/assets/toggle.svg" alt="" class="lg:hidden order-2 sm:order-1">
+                    <img @click="navOpen = !navOpen" src="../public/assets/toggle.svg" alt=""
+                        class="lg:hidden order-2 sm:order-1">
                     <div class="order-2 hidden lg:block">
                         <ul class="flex gap-16">
                             <li class="text-grey font-bold text-sm"><a href="">Home</a></li>
@@ -43,7 +46,7 @@
                 x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                 x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100"
                 x-transition:leave-end="opacity-0 scale-90" x-data="{open : false}"
-                class="fixed bottom-0 right-0 left-0 p-4 bg-white border lg:hidden">
+                class="z-50 fixed bottom-0 right-0 left-0 p-4 bg-white border lg:hidden">
                 <ul class="flex justify-between">
                     <li>
                         <button class="flex justify-center flex-col items-center gap-1 text-biru">
@@ -81,6 +84,51 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Hero Section -->
+
+        <section>
+            <div class="container mx-auto px-8 py-4 lg:py-16">
+                <div class="grid grid-cols-12 items-center">
+                    <div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
+                        <div>
+                            <button
+                                class="px-8 py-4 bg-white text-pink flex gap-2 font-bold text-sm drop-shadow-sm rounded-full mx-auto lg:mx-0">
+                                Explore the World!
+                                <img src="../public/assets/icons/bag.svg" alt="">
+                            </button>
+                            <h1
+                                class="font-bold lg:text-start md:mb-[43px] md:mt-[43px] lg:text-[69px] text-center text-[40px] md:text-[56px]  text-grey leading-tight mt-4 mb-6">
+                                Travel <span class="text-pink">top
+                                    destination</span> of the world</h1>
+                            <p
+                                class="text-center lg:text-start md:mb-[43px] text-grey opacity-50 text-base md:text-[18px] mb-8 md:w-3/4 lg:w-full mx-auto">
+                                We always make our customer happy
+                                by
+                                providing
+                                as many choices as possible</p>
+                            <div class="flex flex-col md:flex-row justify-center gap-6 lg:justify-start">
+                                <button
+                                    class="py-6 px-8 bg-biru drop-shadow-sm text-white rounded-full text-sm font-bold">Get
+                                    Started</button>
+                                <button
+                                    class="z-10 justify-center items-center flex gap-2 py-6 px-8 bg-white border border-[#EEEEEE] text-grey rounded-full text-sm font-bold">
+                                    <img src="../public/assets/icons/play.svg" alt="">
+                                    Watch Demo
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-8 order-1 lg:order-2 text-center">
+                        <div>
+                            <img src="../public/assets/hero.svg" class="w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

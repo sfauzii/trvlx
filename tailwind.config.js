@@ -11,6 +11,9 @@ module.exports = {
         pink: '#F8549F',
         grey: '#222831'
       }
+      // dropShadow: {
+      //   "sm-shadow" : ""
+      // }
     }
   },
   plugins: []
